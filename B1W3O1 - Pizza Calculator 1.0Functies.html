@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+	<html>
+
+<head>
+	<title>B1W3O1 - Pizza Calculator 1.0Functies</title>
+</head>
+
+	<body>
+
+ 	<script>
+ 		
+ 		// Mijn naam is Vitja Nosa
+ 		// Opdracht: Pizza calculator
+
+ 	var vraagSmallPizzas; vraagSmallPizzas = prompt("Hoeveel small pizza's wilt u? (€13,- per stuk)."); //Vraagt hoeveel small pizza's je wilt.
+ 	var vraagMediumPizzas; vraagMediumPizzas = prompt("Hoeveel medium pizza's wilt u? (€15,- per stuk)."); //Vraagt hoeveel medium pizza's je wilt.
+ 	var vraagLargePizzas; vraagLargePizza = prompt("Hoeveel large pizza's wilt u? (€17,- per stuk)."); //Vraagt hoeveel large pizza's je wilt.
+ 	
+ 	const SMALLPIZZAPRICE = 13; //De vaste prijs per small pizza.
+ 	const MEDIUMPIZZAPRICE = 15; //De vaste prijs per medium pizza.
+ 	const LARGEPIZZAPRICE = 17; //De vaste prijs per large pizza.
+
+ 	var smallPizzaPriceTotal; smallPizzaPriceTotal = SMALLPIZZAPRICE * vraagSmallPizzas; //Berekent de totale prijs van al jouw small pizza's.
+ 	var mediumPizzaPriceTotal; mediumPizzaPriceTotal = MEDIUMPIZZAPRICE * vraagMediumPizzas; //Berekent de totale prijs van al jouw medium pizza's.
+ 	var largePizzaPriceTotal; largePizzaPriceTotal = LARGEPIZZAPRICE * vraagLargePizza; //Berekent de totale prijs van al jouw large pizza's.
+
+ 	var pizzaPriceTotal; pizzaPriceTotal = Number(smallPizzaPriceTotal) + Number(mediumPizzaPriceTotal) + Number(largePizzaPriceTotal); //Berekent het totale bedrag van alle pizza's die je hebt bestelt.
+
+ 	document.write(("Uw bestelling:") + "<br>" + "<br>" + vraagSmallPizzas + " " + ("small pizza's - €") + smallPizzaPriceTotal + ",-" + ("<br>") + vraagMediumPizzas + " " + ("medium pizza's - €") + mediumPizzaPriceTotal + ",-" + ("<br>") + vraagLargePizza + " " + ("large pizza's - €") + largePizzaPriceTotal + ",-" + "<br>" + "----------" + "<br>" + ("Totale prijs: ") + "<br>" + "<br>" + "€" + pizzaPriceTotal + ",-"); //laat de gebruiker op de pagina zien wat hij of zij heeft bestelt. 
+
+ 	</script>
+
+
+	</body>
+
+
+</html>
